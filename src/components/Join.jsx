@@ -7,7 +7,7 @@ export default function Join() {
     <div className="join">
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <h4>Join with us</h4>
 
             <h5>Sell your craft products here and reach millions of buyers or promote your products, come be part of us.</h5>
@@ -15,7 +15,7 @@ export default function Join() {
               Start Selling Your Product <FaArrowRight />{' '}
             </NavLink>
           </div>
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <img src="/images/join.png" alt="" />
           </div>
         </div>

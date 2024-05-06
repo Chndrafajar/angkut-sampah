@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaLock, FaShoppingBag } from 'react-icons/fa';
-import { IoBagOutline } from 'react-icons/io5';
+import { IoSearchOutline, IoHomeOutline } from 'react-icons/io5';
+import { LuUserCircle } from 'react-icons/lu';
+import SearchModal from './SearchModal';
 
 export default function Navbar() {
   return (
@@ -21,7 +22,7 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="container">
           <div className="items-navbar">
-            <NavLink className="navbar-brand">
+            <NavLink to="/" className="navbar-brand">
               Angkut <span>Sampah</span>
             </NavLink>
             <div className="input-search">
@@ -29,12 +30,44 @@ export default function Navbar() {
               <button>Search</button>
             </div>
             <div className="info-navbar">
-              <a>Log In</a>
-              <button>Sign Up</button> <div className="bar"></div> <img src="/images/heart.svg" alt="" /> <img src="/images/bag-happy.svg" alt="" />
+              <IoSearchOutline className="icon-search" data-bs-toggle="modal" data-bs-target="#searchModal" />
+              <NavLink className="icons-info" to="/login">
+                Log In
+              </NavLink>
+              <NavLink className="icons-sign" to="/register">
+                <button>Sign Up</button>
+              </NavLink>{' '}
+              <div className="bar"></div> <img src="/images/heart.svg" alt="" /> <img src="/images/bag-happy.svg" alt="" />
             </div>
           </div>
         </div>
       </nav>
+      <nav className="bottom-bar">
+        <ul>
+          <li>
+            <NavLink to="/">
+              <IoHomeOutline />
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink>
+              <img src="/images/heart.svg" alt="" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink>
+              <img src="/images/bag-happy.svg" alt="" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/login">
+              <LuUserCircle />
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+      <SearchModal />
     </>
   );
 }

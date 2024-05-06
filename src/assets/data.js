@@ -1,0 +1,58 @@
+export const product = [
+  {
+    id: 1,
+    img: '/product/pic1.png',
+    user: 'Studio Design',
+    title: 'Afteroom Coat Hanger',
+    price: 19.12,
+  },
+  {
+    id: 2,
+    img: '/product/pic.png',
+    user: 'Studio Design',
+    title: 'Afteroom Coat Hanger',
+    price: 19.12,
+  },
+  {
+    id: 3,
+    img: '/product/pic1.png',
+    user: 'Studio Design',
+    title: 'Afteroom Coat Hanger',
+    price: 19.12,
+  },
+  {
+    id: 4,
+    img: '/product/pic.png',
+    user: 'Studio Design',
+    title: 'Afteroom Coat Hanger',
+    price: 19.12,
+  },
+  {
+    id: 5,
+    img: '/product/pic1.png',
+    user: 'Studio Design',
+    title: 'Afteroom Coat Hanger',
+    price: 19.12,
+  },
+  {
+    id: 6,
+    img: '/product/pic.png',
+    user: 'Studio Design',
+    title: 'Afteroom Coat Hanger',
+    price: 19.12,
+  },
+  {
+    id: 7,
+    img: '/product/pic1.png',
+    user: 'Studio Design',
+    title: 'Afteroom Coat Hanger',
+    price: 19.12,
+  },
+  {
+    id: 8,
+    img: '/product/pic.png',
+    user: 'Studio Design',
+    title: 'Afteroom Coat Hanger',
+    price: 19.12,
+  },
+];
