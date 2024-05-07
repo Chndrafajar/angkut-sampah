@@ -14,6 +14,37 @@
 //   color: #00af91;
 // }
 
+//loading
+.loading-item {
+  top: 0px;
+  position: fixed;
+  z-index: 9999;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading-circle {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #00af91; /* Ubah warna sesuai kebutuhan Anda */
+  border-radius: 20%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .bottom-bar {
   display: none;
   height: 80px;
@@ -934,5 +965,18 @@
   }
   .ourMision .container .row .col-lg-6 h4 {
     font-size: 26px;
+  }
+  .footer .container .row .col-md-4 .input-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    input {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
   }
 }
